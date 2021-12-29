@@ -186,6 +186,8 @@ INF  OvmfPkg/SmmAccess/SmmAccessPei.inf
 !endif
 INF  UefiCpuPkg/CpuMpPei/CpuMpPei.inf
 INF  OvmfPkg/MyHelloWorldPEIMDriver/MyHelloWorldPEIMDriver.inf
+INF  OvmfPkg/MyHelloWorldInstallPPI/MyHelloWorldInstallPPI.inf
+INF  OvmfPkg/MyHelloWorldLocatePPI/MyHelloWorldLocatePPI.inf
 
 !include OvmfPkg/OvmfTpmPei.fdf.inc
 

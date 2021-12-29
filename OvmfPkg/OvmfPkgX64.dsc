@@ -675,6 +675,9 @@ OvmfPkg/HelloWorld/HelloWorld.inf
   # PEI Phase modules
   #
   OvmfPkg/MyHelloWorldPEIMDriver/MyHelloWorldPEIMDriver.inf
+  OvmfPkg/MyHelloWorldInstallPPI/MyHelloWorldInstallPPI.inf
+  OvmfPkg/MyHelloWorldLocatePPI/MyHelloWorldLocatePPI.inf
+  
   MdeModulePkg/Core/Pei/PeiMain.inf
   MdeModulePkg/Universal/PCD/Pei/Pcd.inf  {
     <LibraryClasses>
