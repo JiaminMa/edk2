@@ -126,6 +126,7 @@
 !include MdePkg/MdeLibs.dsc.inc
 
 [LibraryClasses]
+UefiShellCEntryLib|ShellPkg/Library/UefiShellCEntryLib/UefiShellCEntryLib.inf
   PcdLib|MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
   TimerLib|OvmfPkg/Library/AcpiTimerLib/BaseAcpiTimerLib.inf
   ResetSystemLib|OvmfPkg/Library/ResetSystemLib/BaseResetSystemLib.inf
@@ -659,6 +660,7 @@
 #
 ################################################################################
 [Components]
+OvmfPkg/HelloWorld/HelloWorld.inf
   OvmfPkg/ResetVector/ResetVector.inf
 
   #
