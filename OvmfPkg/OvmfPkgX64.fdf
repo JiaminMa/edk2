@@ -185,6 +185,7 @@ INF  MdeModulePkg/Universal/Variable/Pei/VariablePei.inf
 INF  OvmfPkg/SmmAccess/SmmAccessPei.inf
 !endif
 INF  UefiCpuPkg/CpuMpPei/CpuMpPei.inf
+INF  OvmfPkg/MyHelloWorldPEIMDriver/MyHelloWorldPEIMDriver.inf
 
 !include OvmfPkg/OvmfTpmPei.fdf.inc
 

@@ -1,0 +1,1 @@
+qemu-system-x86_64 -bios ./Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd -M pc -m 256 -cpu qemu64 -boot order=dc -serial stdio
