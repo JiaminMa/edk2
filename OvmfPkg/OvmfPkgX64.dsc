@@ -709,6 +709,7 @@ OvmfPkg/HelloWorld/HelloWorld.inf
   #
   # DXE Phase modules
   #
+  OvmfPkg/MyHelloWorldDXEDriver/MyHelloWorldDXEDriver.inf
   MdeModulePkg/Core/Dxe/DxeMain.inf {
     <LibraryClasses>
       NULL|MdeModulePkg/Library/LzmaCustomDecompressLib/LzmaCustomDecompressLib.inf
