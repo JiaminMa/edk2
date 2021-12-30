@@ -188,6 +188,7 @@ INF  UefiCpuPkg/CpuMpPei/CpuMpPei.inf
 INF  OvmfPkg/MyHelloWorldPEIMDriver/MyHelloWorldPEIMDriver.inf
 INF  OvmfPkg/MyHelloWorldInstallPPI/MyHelloWorldInstallPPI.inf
 INF  OvmfPkg/MyHelloWorldLocatePPI/MyHelloWorldLocatePPI.inf
+INF  OvmfPkg/MyHelloWorldPEIMHob/MyHelloWorldPEIMHob.inf
 
 !include OvmfPkg/OvmfTpmPei.fdf.inc
 
@@ -321,6 +322,8 @@ INF  ShellPkg/Application/Shell/Shell.inf
 
 INF MdeModulePkg/Logo/LogoDxe.inf
 INF OvmfPkg/MyHelloWorldDXEDriver/MyHelloWorldDXEDriver.inf
+INF OvmfPkg/MyHelloWorldDXEProtocol/MyHelloWorldDXEProtocol.inf
+INF OvmfPkg/MyHelloWorldDXEHob/MyHelloWorldDXEHob.inf
 
 #
 # Network modules

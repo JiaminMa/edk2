@@ -126,7 +126,10 @@
 !include MdePkg/MdeLibs.dsc.inc
 
 [LibraryClasses]
-UefiShellCEntryLib|ShellPkg/Library/UefiShellCEntryLib/UefiShellCEntryLib.inf
+  DxeHobListLib|UefiPayloadPkg/Library/DxeHobListLib/DxeHobListLib.inf
+  DxeHobLib|UefiPayloadPkg/Library/DxeHobLib/DxeHobLib.inf
+  UefiShellCEntryLib|ShellPkg/Library/UefiShellCEntryLib/UefiShellCEntryLib.inf
+
   PcdLib|MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
   TimerLib|OvmfPkg/Library/AcpiTimerLib/BaseAcpiTimerLib.inf
   ResetSystemLib|OvmfPkg/Library/ResetSystemLib/BaseResetSystemLib.inf
@@ -660,7 +663,8 @@ UefiShellCEntryLib|ShellPkg/Library/UefiShellCEntryLib/UefiShellCEntryLib.inf
 #
 ################################################################################
 [Components]
-OvmfPkg/HelloWorld/HelloWorld.inf
+  OvmfPkg/HelloWorld/HelloWorld.inf
+  OvmfPkg/MyHelloWorldAppProtocol/MyHelloWorldAppProtocol.inf    
   OvmfPkg/ResetVector/ResetVector.inf
 
   #
@@ -677,6 +681,7 @@ OvmfPkg/HelloWorld/HelloWorld.inf
   OvmfPkg/MyHelloWorldPEIMDriver/MyHelloWorldPEIMDriver.inf
   OvmfPkg/MyHelloWorldInstallPPI/MyHelloWorldInstallPPI.inf
   OvmfPkg/MyHelloWorldLocatePPI/MyHelloWorldLocatePPI.inf
+  OvmfPkg/MyHelloWorldPEIMHob/MyHelloWorldPEIMHob.inf
   
   MdeModulePkg/Core/Pei/PeiMain.inf
   MdeModulePkg/Universal/PCD/Pei/Pcd.inf  {
@@ -713,6 +718,8 @@ OvmfPkg/HelloWorld/HelloWorld.inf
   # DXE Phase modules
   #
   OvmfPkg/MyHelloWorldDXEDriver/MyHelloWorldDXEDriver.inf
+  OvmfPkg/MyHelloWorldDXEProtocol/MyHelloWorldDXEProtocol.inf
+  OvmfPkg/MyHelloWorldDXEHob/MyHelloWorldDXEHob.inf
   MdeModulePkg/Core/Dxe/DxeMain.inf {
     <LibraryClasses>
       NULL|MdeModulePkg/Library/LzmaCustomDecompressLib/LzmaCustomDecompressLib.inf
