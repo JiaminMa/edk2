@@ -666,6 +666,7 @@
   OvmfPkg/HelloWorld/HelloWorld.inf
   OvmfPkg/MyHelloWorldAppProtocol/MyHelloWorldAppProtocol.inf    
   OvmfPkg/MyHelloWorldPCD/MyHelloWorldPCD.inf
+  OvmfPkg/MyHelloWorldEvent/MyHelloWorldEvent.inf
     
   OvmfPkg/ResetVector/ResetVector.inf
 
