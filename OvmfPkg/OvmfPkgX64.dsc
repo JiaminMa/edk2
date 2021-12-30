@@ -129,6 +129,9 @@
   DxeHobListLib|UefiPayloadPkg/Library/DxeHobListLib/DxeHobListLib.inf
   DxeHobLib|UefiPayloadPkg/Library/DxeHobLib/DxeHobLib.inf
   UefiShellCEntryLib|ShellPkg/Library/UefiShellCEntryLib/UefiShellCEntryLib.inf
+  UefiShellDriver1CommandsLib|ShellPkg/Library/UefiShellDriver1CommandsLib/UefiShellDriver1CommandsLib.inf
+  HandleParsingLib|ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib.inf
+  ShellCommandLib|ShellPkg/Library/UefiShellCommandLib/UefiShellCommandLib.inf
 
   PcdLib|MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
   TimerLib|OvmfPkg/Library/AcpiTimerLib/BaseAcpiTimerLib.inf
@@ -667,6 +670,7 @@
   OvmfPkg/MyHelloWorldAppProtocol/MyHelloWorldAppProtocol.inf    
   OvmfPkg/MyHelloWorldPCD/MyHelloWorldPCD.inf
   OvmfPkg/MyHelloWorldEvent/MyHelloWorldEvent.inf
+  OvmfPkg/MyHelloWorldFileIO/MyHelloWorldFileIO.inf
     
   OvmfPkg/ResetVector/ResetVector.inf
 
