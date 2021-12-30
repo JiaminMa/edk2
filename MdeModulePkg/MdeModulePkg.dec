@@ -906,6 +906,8 @@
   # @Prompt Enable process non-reset capsule image at runtime.
   gEfiMdeModulePkgTokenSpaceGuid.PcdSupportProcessCapsuleAtRuntime|FALSE|BOOLEAN|0x00010079
 
+  gEfiMdeModulePkgTokenSpaceGuid.PcdMyHelloWorldPrintEnable|FALSE|BOOLEAN|0x0001200d
+
 [PcdsFeatureFlag.IA32, PcdsFeatureFlag.ARM, PcdsFeatureFlag.AARCH64]
   gEfiMdeModulePkgTokenSpaceGuid.PcdPciDegradeResourceForOptionRom|FALSE|BOOLEAN|0x0001003a
 
@@ -1077,7 +1079,9 @@
   # @Prompt Enable UEFI Stack Guard.
   gEfiMdeModulePkgTokenSpaceGuid.PcdCpuStackGuard|FALSE|BOOLEAN|0x30001055
 
+
 [PcdsFixedAtBuild, PcdsPatchableInModule]
+
   ## Dynamic type PCD can be registered callback function for Pcd setting action.
   #  PcdMaxPeiPcdCallBackNumberPerPcdEntry indicates the maximum number of callback function
   #  for a dynamic PCD used in PEI phase.
@@ -1684,12 +1688,15 @@
   ## This PCD defines the times to print hello world string.
   #  This PCD is a sample to explain UINT32 PCD usage.
   # @Prompt HellowWorld print times.
-  gEfiMdeModulePkgTokenSpaceGuid.PcdHelloWorldPrintTimes|1|UINT32|0x40000005
+  #gEfiMdeModulePkgTokenSpaceGuid.PcdHelloWorldPrintTimes|1|UINT32|0x40000005
+  gEfiMdeModulePkgTokenSpaceGuid.PcdMyHelloWorldPrintTimes|5|UINT32|0x40000005
 
   ## This PCD defines the HelloWorld print string.
   #  This PCD is a sample to explain String typed PCD usage.
   # @Prompt HelloWorld print string.
-  gEfiMdeModulePkgTokenSpaceGuid.PcdHelloWorldPrintString|L"UEFI Hello World!\n"|VOID*|0x40000004
+  #gEfiMdeModulePkgTokenSpaceGuid.PcdHelloWorldPrintString|L"UEFI Hello World!\n"|VOID*|0x40000004
+  
+  gEfiMdeModulePkgTokenSpaceGuid.PcdMyHelloWorldPrintString|L"UEFI Hello World!\n"|VOID*|0x40000004
 
   ## Indicates the maximum size of the capsule image with a reset flag that the platform can support.
   #  The default max size is 100MB (0x6400000) for more than one large capsule images.
